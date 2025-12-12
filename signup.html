@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="signup-style.css">
+</head>
+<body>
+    <div class="signup-wrapper">
+        <div class="signup-container">
+            <!-- Left side branding -->
+            <div class="signup-branding">
+                <div class="branding-content">
+                    <div class="logo">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h2>Build Your Future</h2>
+                    <p>Education is the key to success</p>
+                    <div class="school-icons">
+                        <i class="fas fa-book"></i>
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-brain"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right side signup form -->
+            <div class="signup-form-container">
+                <div class="signup-header">
+                    <h1>CREATE ACCOUNT</h1>
+                    <p>Join Our Learning Community</p>
+                </div>
+                
+                <div class="encouragement-message">
+                    <p><i class="fas fa-star"></i> <strong>Students:</strong> Create your account and begin your learning journey today!</p>
+                    <p><i class="fas fa-heart"></i> <strong>Parents:</strong> Register to track and support your child's education.</p>
+                </div>
+                
+                <form id="signupForm" class="signup-form">
+                    <!-- Section 1: Email Verification -->
+                    <div class="form-section">
+                        <h3 class="section-title"><i class="fas fa-envelope"></i> Email Verification</h3>
+                        <div class="verification-section">
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="email" name="email" placeholder="Email address" required>
+                                </div>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            <button type="button" class="verify-btn" id="verifyEmailBtn">Verify Email</button>
+                        </div>
+                        
+                        <div class="verification-status" id="verificationStatus" style="display: none;">
+                            <p><i class="fas fa-hourglass-half"></i> Verification code sent to your email</p>
+                            <div class="verification-code-group">
+                                <input type="text" id="verificationCode" placeholder="Enter verification code" maxlength="6">
+                                <button type="button" id="confirmCodeBtn">Confirm</button>
+                            </div>
+                            <span class="error-message" id="codeError"></span>
+                            <p class="resend-text">Didn't receive it? <a href="#" id="resendCode">Resend code</a></p>
+                        </div>
+                        
+                        <div class="verified-status" id="verifiedStatus" style="display: none;">
+                            <p><i class="fas fa-check-circle"></i> Email verified successfully</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Section 2: Personal Information -->
+                    <div class="form-section">
+                        <h3 class="section-title"><i class="fas fa-user"></i> Personal Information</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+                                </div>
+                                <span class="error-message" id="firstNameError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+                                </div>
+                                <span class="error-message" id="lastNameError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-phone"></i>
+                                    <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+                                </div>
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Age</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-calendar"></i>
+                                    <input type="number" id="age" name="age" placeholder="Age" min="1" max="120" required>
+                                </div>
+                                <span class="error-message" id="ageError"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Section 3: Academic & Demographics -->
+                    <div class="form-section">
+                        <h3 class="section-title"><i class="fas fa-graduation-cap"></i> Academic Information</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <div class="radio-group">
+                                    <label class="radio-wrapper">
+                                        <input type="radio" name="gender" value="male" required>
+                                        <span class="radio-custom"></span>
+                                        <span>Male</span>
+                                    </label>
+                                    <label class="radio-wrapper">
+                                        <input type="radio" name="gender" value="female" required>
+                                        <span class="radio-custom"></span>
+                                        <span>Female</span>
+                                    </label>
+                                </div>
+                                <span class="error-message" id="genderError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="grade">Grade/Form</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <select id="grade" name="grade" required>
+                                        <option value="">Select Grade</option>
+                                        <option value="1">Grade 1</option>
+                                        <option value="2">Grade 2</option>
+                                        <option value="3">Grade 3</option>
+                                        <option value="4">Grade 4</option>
+                                        <option value="5">Grade 5</option>
+                                        <option value="6">Grade 6</option>
+                                        <option value="7">Grade 7</option>
+                                        <option value="8">Grade 8</option>
+                                        <option value="9">Grade 9</option>
+                                        <option value="10">Grade 10 (Senior School)</option>
+                                        <option value="11">Grade 11 (Senior School)</option>
+                                        <option value="12">Grade 12 (Senior School)</option>
+                                    </select>
+                                </div>
+                                <span class="error-message" id="gradeError"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Section 4: Security -->
+                    <div class="form-section">
+                        <h3 class="section-title"><i class="fas fa-lock"></i> Password & Security</h3>
+                        
+                        <div class="form-group">
+                            <label>Password</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+                                <button type="button" class="toggle-password" id="togglePassword">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                            <div class="password-strength" id="passwordStrength"></div>
+                            <span class="error-message" id="passwordError"></span>
+                            <p class="password-hint">Must be 8+ characters with uppercase, lowercase, and numbers</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                                <button type="button" class="toggle-password" id="toggleConfirmPassword">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                            <span class="error-message" id="confirmPasswordError"></span>
+                        </div>
+                    </div>
+                    
+                    <!-- Section 5: Terms & Conditions -->
+                    <div class="form-section last-section">
+                        <div class="form-group">
+                            <label class="checkbox-wrapper">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span class="checkmark"></span>
+                                <span>I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></span>
+                            </label>
+                            <span class="error-message" id="termsError"></span>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="signup-btn">Create Account</button>
+                </form>
+                
+                <p class="login-link">Already have an account? <a href="index.html">Sign In</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="signup-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-container">
+            <!-- Left side notes/information -->
+            <div class="login-notes">
+                <div class="notes-content">
+                    <h3><i class="fas fa-lightbulb"></i> Quick Tips</h3>
+                    <ul>
+                        <li><strong>Forgot your password?</strong> Click "Forgot password?" to reset it instantly.</li>
+                        <li><strong>New student or parent?</strong> Create a free account by clicking the link below the login button.</li>
+                        <li><strong>Need help?</strong> Contact our support team at support@learninghub.edu</li>
+                        <li><strong>Safe & Secure:</strong> Your data is encrypted and protected with industry-standard security.</li>
+                    </ul>
+                    
+                    <div class="features-box">
+                        <h4>Why Join Us?</h4>
+                        <div class="feature-item">
+                            <i class="fas fa-book-open"></i>
+                            <span>Access thousands of courses</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Track your progress</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <span>Connect with teachers</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Earn achievements</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right side login form -->
+            <div class="login-form-container">
+                <div class="login-header">
+                    <h1>LOGIN</h1>
+                    <p>Welcome to Your Learning Hub</p>
+                </div>
+                
+                <div class="encouragement-message">
+                    <p><i class="fas fa-star"></i> <strong>Students:</strong> Log in to access your courses, assignments, and grades!</p>
+                    <p><i class="fas fa-heart"></i> <strong>Parents:</strong> Monitor your child's progress and stay connected with teachers.</p>
+                </div>
+                
+                <form id="loginForm" class="login-form">
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="Email address" required>
+                        </div>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder="Password" required>
+                            <button type="button" class="toggle-password" id="togglePassword">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <span class="error-message" id="passwordError"></span>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" id="remember" name="remember">
+                            <span class="checkmark"></span>
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password" id="forgotPasswordBtn">Forgot password?</a>
+                    </div>
+                    
+                    <button type="submit" class="login-btn">Sign In</button>
+                </form>
+                
+                <p class="signup-link">Don't have an account? <a href="signup.html">Create one</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Forgot Password Modal -->
+    <div class="modal" id="forgotPasswordModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <h2>Reset Password</h2>
+            <p class="modal-subtitle">Enter your email address and we'll send you instructions to reset your password</p>
+            
+            <form id="forgotPasswordForm">
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="resetEmail" placeholder="Email address" required>
+                    </div>
+                    <span class="error-message" id="resetEmailError"></span>
+                </div>
+                
+                <button type="submit" class="modal-btn">Send Reset Link</button>
+            </form>
+            
+            <div class="reset-success" id="resetSuccess" style="display: none;">
+                <i class="fas fa-check-circle"></i>
+                <h3>Check your email!</h3>
+                <p>We've sent password reset instructions to your email address. Please check your inbox and follow the link.</p>
+                <button type="button" class="modal-btn" id="backToLoginBtn">Back to Login</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

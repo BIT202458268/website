@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of Kenyan students learning">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#6B6FA0"/>
+      <stop offset="1" stop-color="#7DB8D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" rx="20" fill="#FFFFFF"/>
+  <g transform="translate(40,60)">
+    <rect x="0" y="0" width="500" height="380" rx="14" fill="url(#g1)" opacity="0.07"/>
+    <g transform="translate(20,18)">
+      <circle cx="120" cy="120" r="48" fill="#FFDDAA"/>
+      <rect x="200" y="40" width="220" height="130" rx="10" fill="#FFF" stroke="#E5EAF0"/>
+      <rect x="420" y="70" width="30" height="12" rx="4" fill="#8B95A5" opacity="0.6"/>
+      <rect x="210" y="60" width="180" height="12" rx="6" fill="#6B6FA0"/>
+      <rect x="210" y="82" width="140" height="10" rx="5" fill="#7DB8D6"/>
+      <g transform="translate(60,220)">
+        <rect x="0" y="0" width="110" height="12" rx="6" fill="#FFF"/>
+        <rect x="130" y="0" width="160" height="12" rx="6" fill="#FFF"/>
+      </g>
+    </g>
+    <g transform="translate(380,220)">
+      <rect x="0" y="0" width="120" height="160" rx="12" fill="#FFF" stroke="#E5EAF0"/>
+      <rect x="12" y="12" width="96" height="12" rx="6" fill="#6B6FA0"/>
+      <rect x="12" y="36" width="80" height="10" rx="5" fill="#7DB8D6"/>
+      <circle cx="60" cy="120" r="18" fill="#D4C584"/>
+    </g>
+  </g>
+</svg>

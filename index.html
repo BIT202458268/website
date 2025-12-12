@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Masomo — Kenyan Curriculum Learning</title>
+    <link rel="stylesheet" href="landing-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="top-menu">
+        <div class="container-top">
+            <div class="top-left">
+                <a href="tel:+254722000000"><i class="fas fa-phone"></i> +254 722 000 000</a>
+                <a href="mailto:support@masomo.ke"><i class="fas fa-envelope"></i> support@masomo.ke</a>
+            </div>
+            <div class="top-right">
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="header-flex">
+            <div class="datetime">
+                <span id="current-date"></span>
+                <span id="current-time"></span>
+            </div>
+            <a class="logo">Masomo</a>
+            <nav class="nav">
+                <a href="#features">Features</a>
+                <a href="#curriculum">Curriculum</a>
+                <a href="#schools">For Schools</a>
+            </nav>
+            <div class="nav-buttons">
+                <a href="login.html" class="nav-link">Log In</a>
+                <a href="signup.html" class="nav-link primary">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <nav class="hero-nav" aria-label="Hero navigation">
+                        <a href="#features">Features</a>
+                        <a href="#curriculum">Curriculum</a>
+                        <a href="#pricing">Pricing</a>
+                    </nav>
+
+                    <h1>Empowering Every Kenyan Learner. Anytime. Anywhere.</h1>
+                    <p class="lede">Welcome to <strong>Masomo</strong>—Kenya's curriculum-aligned learning platform for Grade 1–9 and Form 1–4. Built for the CBC and 8–4–4 systems, our lessons, quizzes and assessments help learners build confidence and competence.</p>
+                    <div class="hero-ctas">
+                        <a class="btn primary" href="signup.html">Get Started</a>
+                        <a class="btn ghost" href="#demo">Watch Demo</a>
+                    </div>
+                    <ul class="mini-features">
+                        <li>100% Kenyan Curriculum</li>
+                        <li>Interactive Lessons & Quizzes</li>
+                        <li>Low-bandwidth & Offline-friendly</li>
+                    </ul>
+                </div>
+                <div class="hero-art">
+                    <img src="hero-illustration.svg" alt="Students learning on devices" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider section inserted per request -->
+        <section class="slider-section">
+            <div class="container">
+                <div class="slider" id="heroSlider">
+                    <div class="slider-track">
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=600&fit=crop" alt="Students in classroom">
+                            <div class="slide-content">
+                                <h3>Interactive Lessons</h3>
+                                <p>Engaging video lessons and quizzes that make learning fun and effective for every learner.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1516534775068-bb8badc4e9aa?w=800&h=600&fit=crop" alt="Child studying with tablet">
+                            <div class="slide-content">
+                                <h3>Low-bandwidth & Offline</h3>
+                                <p>Designed to work well even on low data connections and with offline-friendly content.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop" alt="Students collaborating">
+                            <div class="slide-content">
+                                <h3>Personalized Paths</h3>
+                                <p>Adaptive recommendations and progress tracking help each student reach their potential.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="prev" aria-label="Previous slide">‹</button>
+                        <button class="next" aria-label="Next slide">›</button>
+                    </div>
+                </div>
+                <div class="slider-dots" id="heroDots"></div>
+            </div>
+        </section>
+
+        <section class="learning-gallery">
+            <div class="container">
+                <h2>Real Learning, Real Impact</h2>
+                <p class="small">See how Kenyan learners are thriving on our platform.</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop" alt="Smiling Black students in classroom" />
+                        <p>Interactive classroom experience</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1516534775068-bb8badc4e9aa?w=400&h=300&fit=crop" alt="Young Black girl studying with tablet" />
+                        <p>Digital learning at home</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop" alt="Black students collaborating on project" />
+                        <p>Peer learning & collaboration</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=400&h=300&fit=crop" alt="Black teacher engaging with student" />
+                        <p>Teacher-led guidance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section container">
+            <h2>Why parents, teachers and schools love us</h2>
+            <div class="grid-3">
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a6d?w=400&h=250&fit=crop" alt="Student learning curriculum" />
+                    </div>
+                    <h3>Curriculum-Aligned</h3>
+                    <p>Lessons mapped to CBC and 8–4–4 syllabi with topic-based practice and assessments.</p>
+                </article>
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1516534775068-bb8badc4e9aa?w=400&h=250&fit=crop" alt="Interactive learning" />
+                    </div>
+                    <h3>Interactive Learning</h3>
+                    <p>Videos, games, and instant-feedback quizzes keep learners motivated.</p>
+                </article>
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=250&fit=crop" alt="Personalized learning paths" />
+                    </div>
+                    <h3>Personalized Paths</h3>
+                    <p>Adaptive recommendations close learning gaps and accelerate progress.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="curriculum" class="section alt">
+            <div class="container">
+                <h2>Kenyan Curriculum — Quick Overview</h2>
+                <p class="small">A clear, compact summary of the national curriculum and what it means for learners today.</p>
+
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px;align-items:start">
+                    <div>
+                        <h4 style="margin:0 0 8px;color:var(--primary)">What it is</h4>
+                        <p class="small" style="margin:0">Kenya follows a competency-focused approach (CBC) that is evolving toward a broader Competency‑Based Education (CBE). The emphasis is on skills, values and applied knowledge rather than rote memorization.</p>
+                    </div>
+
+                    <div>
+                        <h4 style="margin:0 0 8px;color:var(--primary)">How it's structured</h4>
+                        <ul class="small" style="margin:0;padding-left:18px">
+                            <li>Pre-primary: PP1–PP2</li>
+                            <li>Primary: Grades 1–6</li>
+                            <li>Junior Secondary: Grades 7–9</li>
+                            <li>Senior School: Grades 10–12 (rollout underway)</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 style="margin:0 0 8px;color:var(--primary)">Why it matters</h4>
+                        <ul class="small" style="margin:0;padding-left:18px">
+                            <li>Focus on competencies (critical thinking, collaboration, digital skills)</li>
+                            <li>More project- and skills-based learning</li>
+                            <li>Pathways in Senior School (STEM, Arts & Sports, Social Sciences)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Challenges note and full-details CTA removed per request -->
+            </div>
+        </section>
+
+        <!-- Schools section removed per request -->
+
+        <section class="pricing-section">
+            <div class="container">
+                <h2>Pricing by Grade Level</h2>
+                <p class="small">Affordable learning plans tailored for each grade level. Monthly subscription prices in Kenyan Shillings.</p>
+                <div class="pricing-table-wrapper">
+                    <table class="pricing-table">
+                        <thead>
+                                    <tr>
+                                        <th>Grade Level</th>
+                                        <th class="starter">Primary (Grade 1-3)</th>
+                                        <th class="intermediate">Upper Primary (Grade 5-7)</th>
+                                        <th class="advanced">JSS (Grade 8-9)</th>
+                                        <th class="premium">Senior School (Grade 10-12)</th>
+                                    </tr>
+                                </thead>
+                        <tbody>
+                            <tr class="price-row">
+                                <td class="feature-name">Monthly Price</td>
+                                <td class="starter"><span class="price-amount">Ksh 799</span></td>
+                                <td class="intermediate"><span class="price-amount">Ksh 999</span></td>
+                                <td class="advanced"><span class="price-amount">Ksh 1,299</span></td>
+                                <td class="premium"><span class="price-amount">Ksh 1,699</span></td>
+                            </tr>
+                            <tr>
+                                            <td class="feature-name">Curriculum Coverage</td>
+                                            <td class="starter"><i class="fas fa-check"></i> Grade 1-3</td>
+                                            <td class="intermediate"><i class="fas fa-check"></i> Grade 5-7</td>
+                                            <td class="advanced"><i class="fas fa-check"></i> Grade 8-9</td>
+                                            <td class="premium"><i class="fas fa-check"></i> Senior School (Grade 10-12)</td>
+                                        </tr>
+                            <tr>
+                                <td class="feature-name">Video Lessons</td>
+                                <td class="starter"><i class="fas fa-check"></i></td>
+                                <td class="intermediate"><i class="fas fa-check"></i></td>
+                                <td class="advanced"><i class="fas fa-check"></i></td>
+                                <td class="premium"><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Practice Questions</td>
+                                <td class="starter"><i class="fas fa-check"></i></td>
+                                <td class="intermediate"><i class="fas fa-check"></i></td>
+                                <td class="advanced"><i class="fas fa-check"></i></td>
+                                <td class="premium"><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Mock Exams</td>
+                                <td class="starter"><i class="fas fa-times"></i></td>
+                                <td class="intermediate"><i class="fas fa-check"></i></td>
+                                <td class="advanced"><i class="fas fa-check"></i></td>
+                                <td class="premium"><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Progress Tracking</td>
+                                <td class="starter"><i class="fas fa-check"></i></td>
+                                <td class="intermediate"><i class="fas fa-check"></i></td>
+                                <td class="advanced"><i class="fas fa-check"></i></td>
+                                <td class="premium"><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Parent Dashboard</td>
+                                <td class="starter"><i class="fas fa-times"></i></td>
+                                <td class="intermediate"><i class="fas fa-check"></i></td>
+                                <td class="advanced"><i class="fas fa-check"></i></td>
+                                <td class="premium"><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">Offline Access</td>
+                                <td class="starter"><i class="fas fa-times"></i></td>
+                                <td class="intermediate"><i class="fas fa-times"></i></td>
+                                <td class="advanced"><i class="fas fa-check"></i></td>
+                                <td class="premium"><i class="fas fa-check"></i></td>
+                            </tr>
+                            <tr class="action-row">
+                                <td class="feature-name"></td>
+                                <td class="starter"><a href="signup.html" class="btn primary small">Get Started</a></td>
+                                <td class="intermediate"><a href="signup.html" class="btn primary small">Get Started</a></td>
+                                <td class="advanced"><a href="signup.html" class="btn primary small">Get Started</a></td>
+                                <td class="premium"><a href="signup.html" class="btn primary small">Get Started</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pricing-note">
+                    <p><strong>All plans include:</strong> No credit card required • Cancel anytime • Access on all devices</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-band">
+            <div class="container two-col center">
+                <div>
+                    <h3>Start learning today</h3>
+                    <p class="small">No credit card required. Access Grade 1–Form 4 content across devices.</p>
+                </div>
+                <div>
+                    <a class="btn big primary" href="signup.html">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Masomo</h4>
+                    <p>Empowering every Kenyan learner with curriculum-aligned, interactive education.</p>
+                    <p class="small">&copy; <span id="year"></span> All rights reserved.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#curriculum">Curriculum</a></li>
+                        <li><a href="#schools">For Schools</a></li>
+                        <li><a href="signup.html">Get Started</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Partners & Resources</h4>
+                    <ul>
+                        <li><a href="https://www.kie.ac.ke" target="_blank">Kenya Institute of Education</a></li>
+                        <li><a href="https://www.kicd.ac.ke" target="_blank">KICD</a></li>
+                        <li><a href="https://www.knec.ac.ke" target="_blank">KNEC</a></li>
+                        <li><a href="https://www.cdacc.go.ke" target="_blank">CDACC</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>
+                    <p>Contact: support@masomo.ke | Phone: +254 (0) XXX XXX XXX</p>
+                </div>
+                <div class="footer-socials">
+                    <p style="margin:0;font-size:12px;color:var(--muted)">Follow us</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Live date and time display
+        function updateDateTime() {
+            const now = new Date();
+            const dateStr = now.toLocaleDateString('en-KE', { weekday: 'short', month: 'short', day: 'numeric' });
+            const timeStr = now.toLocaleTimeString('en-KE', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+            document.getElementById('current-date').textContent = dateStr;
+            document.getElementById('current-time').textContent = timeStr;
+        }
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+
+        document.getElementById('year').innerText = new Date().getFullYear();
+
+        // Simple slider setup for #heroSlider
+        (function setupHeroSlider(){
+            const slider = document.getElementById('heroSlider');
+            if (!slider) return;
+            const track = slider.querySelector('.slider-track');
+            const slides = Array.from(track.children);
+            const prevBtn = slider.querySelector('.prev');
+            const nextBtn = slider.querySelector('.next');
+            const dotsRoot = document.getElementById('heroDots');
+            let current = 0;
+            const total = slides.length;
+            let autoplayInterval = 4500;
+            let timer = null;
+
+            function goTo(idx){
+                current = (idx + total) % total;
+                track.style.transform = `translateX(-${current * 100}%)`;
+                updateDots();
+            }
+
+            function next(){ goTo(current + 1); }
+            function prev(){ goTo(current - 1); }
+
+            function createDots(){
+                if(!dotsRoot) return;
+                dotsRoot.innerHTML = '';
+                slides.forEach((s, i) =>{
+                    const btn = document.createElement('button');
+                    btn.className = i === 0 ? 'active' : '';
+                    btn.setAttribute('aria-label', 'Go to slide ' + (i+1));
+                    btn.addEventListener('click', ()=>{ goTo(i); resetTimer(); });
+                    dotsRoot.appendChild(btn);
+                });
+            }
+
+            function updateDots(){
+                if(!dotsRoot) return;
+                Array.from(dotsRoot.children).forEach((b, i)=> b.classList.toggle('active', i === current));
+            }
+
+            function startTimer(){
+                stopTimer();
+                timer = setInterval(next, autoplayInterval);
+            }
+            function stopTimer(){ if(timer) { clearInterval(timer); timer = null; } }
+            function resetTimer(){ stopTimer(); startTimer(); }
+
+            // Init
+            createDots();
+            startTimer();
+
+            // Controls
+            if(nextBtn) nextBtn.addEventListener('click', ()=>{ next(); resetTimer(); });
+            if(prevBtn) prevBtn.addEventListener('click', ()=>{ prev(); resetTimer(); });
+
+            // Pause on hover
+            slider.addEventListener('mouseenter', stopTimer);
+            slider.addEventListener('mouseleave', startTimer);
+
+            // Keyboard support
+            document.addEventListener('keydown', (e)=>{
+                if(e.key === 'ArrowLeft') { prev(); resetTimer(); }
+                if(e.key === 'ArrowRight') { next(); resetTimer(); }
+            });
+
+            // Touch support (basic)
+            let touchStartX = 0;
+            slider.addEventListener('touchstart', (e)=>{ touchStartX = e.touches[0].clientX; stopTimer(); });
+            slider.addEventListener('touchend', (e)=>{
+                const dx = (e.changedTouches[0].clientX || 0) - touchStartX;
+                if (dx > 40) { prev(); }
+                else if (dx < -40) { next(); }
+                resetTimer();
+            });
+        })();
+    </script>
+    <!-- Duplicate login & modal removed from main page per request -->
+</body>
+</html>
